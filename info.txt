@@ -1,0 +1,45 @@
+hi my name is Ayush Sachan 
+i build and innovate the system and things
+
+i made a lot of the projects 
+like some of them are 
+
+1. Sync-Space(Home automation )
+so we automate a full home as per requirements like it has lot of features 
+we can control home appliance from any where anytime with voice command and also by app also with rf remote  and as we as manual things it also update things in real time 
+in the app it also adapts human behaviour after reding daily pattern via sensor and input 
+like if a user daily change the temperature in night of there air conditioner after some days it will check room temperature based on that it will automatically change the temperature        based on last data learning 
+in the automation system it has a lot of the sensor mm wave(it can measure human breathing ) sensor that check is if no one in room it turn of appliance like light and fan and
+vice versa if some one enter it will turn on the appliance 
+and many features like geofencing so we make radius around home if the user comes in this raduius it will turn on AC make room temprature ambient for example if user daily come from office at  time so he/she will get their room ambient 
+it also turn on the things based on the presense and lerning like air purifier 
+it also manage water wastage from tank by turning on and off also turn gives alert for tank cleaning 
+and all other features like door lock snd certain and things like turing on balcony lights or other lights user daily turn on at evening and nights 
+it helps a lot in electricty shaving it has many modes for that to like 
+normal mode (where it save electricy based on the sensor data ) 
+smart mode ( in this it use sensor data and also the user pattern based on that appliance working best for user experince and thier ambinet) 
+extreme mode (in this it uses the sensor data and pattern minimze electricity usage from unnecessary device like refrigrator or a fan any powersocket and also notify the user )
+and also projet the electricty consumtion how much thier montly usage will be 
+and features for security like if some one try to open door it will notify user 
+it also has features like ultra low energy ( user is going to a trip or away from home where it saves max energy ) 
+also in case of the internet unavaliablity then control appliance by the Rf remote or voice command or manual
+
+this Automation is costumizable also for industries like using sensor we monitror hazardus gases, fire, or also air quality 
+
+components used in the automation system 
+raspberry pi zero as main server for home 
+then as rooms the esp-32 is used suppose 2 rooms then 2 esp 32 
+relay based on the amount of the appliance and switches and sockets 
+MM wave sensor for any type of movement detection 
+fire sensor
+AQI sensor 
+humidity & temperature sensor
+smoke sensors 
+
+
+
+
+
+
+ 
+
