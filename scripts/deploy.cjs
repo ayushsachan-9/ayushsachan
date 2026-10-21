@@ -24,7 +24,7 @@ execSync('npx vite build', { stdio: 'inherit' });
 
 // 3. Deploy to Cloudflare Pages
 console.log('☁️  Deploying to Cloudflare Pages (ayush-sachan-portfolio)...');
-execSync('npx wrangler pages deploy dist --project-name ayush-sachan-portfolio --branch master --commit-dirty=true', {
+execSync('npx wrangler pages deploy dist --project-name ayush-sachan-portfolio --branch main --commit-dirty=true', {
   stdio: 'inherit',
   env: {
     ...process.env,
