@@ -1,43 +1,28 @@
 import React from 'react';
-import Header from './components/Header';
-import SidebarIndex from './components/SidebarIndex';
-import Intro from './components/Intro';
-import ProjectCard from './components/ProjectCard';
-import EducationSection from './components/EducationSection';
-import SkillsSection from './components/SkillsSection';
-import ContactSection from './components/ContactSection';
-import FooterSection from './components/FooterSection';
-import { projectsData } from './data/portfolioData';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import SyncSpaceSpotlight from './components/SyncSpaceSpotlight';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[var(--paper)] text-[var(--ink)] antialiased transition-colors duration-200">
-      {/* Floating Index on large screens */}
-      <SidebarIndex />
-
-      {/* Main Single Column (matches nirbhay.me width ~700px) */}
-      <main className="max-w-[700px] mx-auto px-5 sm:px-6">
-        <Header />
-        <Intro />
-
-        {/* Projects Section */}
-        <section id="projects" className="py-8 border-b border-[var(--line)] space-y-6">
-          <h2 className="text-[12px] font-medium tracking-[0.16em] uppercase text-[var(--faint)] mono">
-            Projects & Systems
-          </h2>
-
-          <div className="space-y-6">
-            {projectsData.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-        </section>
-
-        <EducationSection />
-        <SkillsSection />
-        <ContactSection />
-        <FooterSection />
+    <div className="min-h-screen bg-[#0a0a0a] text-neutral-200">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <SyncSpaceSpotlight />
+        <Projects />
+        <Skills />
+        <Education />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

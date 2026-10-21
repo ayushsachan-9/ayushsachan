@@ -2,106 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --paper: #f4f1ea;
-  --panel: #efece4;
-  --panel-hover: #e8e4db;
-  --ink: #1c1a16;
-  --soft: #5e584e;
-  --faint: #8a8376;
-  --line: #ddd6c8;
-  --line-strong: #c8c0b0;
-  --tag-bg: #e8e4db;
-  color-scheme: light;
+@layer base {
+  body {
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+  }
 }
 
-html.dark {
-  --paper: #121110;
-  --panel: #1a1816;
-  --panel-hover: #22201d;
-  --ink: #ece7dc;
-  --soft: #b3ab9e;
-  --faint: #8a8174;
-  --line: #282420;
-  --line-strong: #38332d;
-  --tag-bg: #1e1c19;
-  color-scheme: dark;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--paper);
-  color: var(--ink);
-  font-family: "Newsreader", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
-  font-size: 18px;
-  line-height: 1.6;
-  font-optical-sizing: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-::selection {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.mono {
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-}
-
-/* Nirbhay-style theme toggle pill */
-.theme-switch {
-  position: relative;
-  width: 38px;
-  height: 22px;
-  padding: 0;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  background: var(--panel);
-  cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.theme-switch::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 2px;
-  width: 16px;
-  height: 16px;
-  margin-top: -8px;
-  border-radius: 50%;
-  background: var(--soft);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-html.dark .theme-switch::after {
-  transform: translateX(16px);
-  background: var(--ink);
-}
-
-.theme-switch:hover {
-  border-color: var(--soft);
-}
-
-/* Custom minimal scrollbar */
+/* Neutral Minimal Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--paper);
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--line);
+  background: #262626;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--soft);
+  background: #404040;
 }
